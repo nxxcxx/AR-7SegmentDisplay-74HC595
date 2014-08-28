@@ -28,10 +28,6 @@ const byte digits[10] = {
   B10010000
 };
 
-int counter = 0;
-long previousMillis = 0;
-long interval = 100;
-
 void setup() {
   pinMode(dataPin, OUTPUT);
   pinMode(clockPin, OUTPUT);
@@ -39,12 +35,10 @@ void setup() {
 }
 
 void loop() {
-  
   showDigit(3, 8);
   showDigit(2, 7);
   showDigit(1, 6);
   showDigit(0, 5);
-  
 }
 
 void showDigit(int dsp, int dgt) {
